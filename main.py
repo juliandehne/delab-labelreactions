@@ -96,6 +96,11 @@ def main(filepath):
     try:
         # Iterate over rows in the DataFrame
         for index, row in df.iterrows():
+
+            # Check if the current row has been labeled previously
+            if not pd.isna(row['after_text_label']) and not pd.isna(row['aafter_text_label']):
+                continue  # Skip this row if it's already labeled
+
             # Display the columns by name
             print("m_text:", row['m_text'])
             print("after_text:", row['after_text'])
