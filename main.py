@@ -11,8 +11,9 @@ decision_tree = {
         'next': {
             'p': {
                 'question': "Choose an option for 'positive horizon': "
-                            "elaboration (e), differentiation (dif), validation (v) or ratification (r):",
-                'options': ["e", "dif", "v", "r"],
+                            "elaboration (e), differentiation (dif), validation (v), ratification (r), "
+                            "a new proposition (prop) or information gain (i):",
+                'options': ["e", "dif", "v", "r", "prop", "i"],
             },
             'n': {
                 'question': "Choose an option for 'negative horizon': antithesis (a), opposition (o), divergence (div)",
@@ -32,14 +33,15 @@ decision_tree = {
         }
     },
     'aafter_text': {
-        'question': "Is the aafter_text_reaction a positive horizon,"
-                    " a negative horizon, emotional reaction or an conclusion?",
+        'question': "Is the aafter_text_reaction a positive horizon (p),"
+                    " a negative horizon (n), emotional reaction (e) or an conclusion or metacommunication (c)?",
         'options': ['p', 'n', "e", "c"],
         'next': {
             'p': {
                 'question': "Choose an option for 'positive horizon': "
-                            "elaboration (e), differentiation (dif), validation (v) or ratification (r):",
-                'options': ["e", "dif", "v", "r"],
+                            "elaboration (e), differentiation (dif), validation (v), ratification (r), "
+                            "a new proposition (prop) or information gain (i):",
+                'options': ["e", "dif", "v", "r", "prop", "i"],
             },
             'n': {
                 'question': "Choose an option for 'negative horizon': antithesis (a), opposition (o), divergence (div)",
